@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Memeflix</title>
+    <link rel="shortcut icon" href="Images/descarga.png">
+</head>
+<body>
+    <header>
+        <img class="img_pop" src="Images/img.png">
+        <img class="img_logo_nav" src="Images/logo.jpg">
+        <input id="getSeriesBtn" type="button" value="View Series">
+        <div id="seriesContainer"></div>
+    </header>
+
+    <div class="formContainer">
+        <form id="newSeriesFrm">
+            <h1>Add Serie</h1>
+                <br>
+                <label for="newSeriesName">Series name</label>
+                <input type="text" name="newSeriesName">
+                <br><br>
+                <label for="newSeriesGnre">Series genre</label>
+                <input type="text" name="newSeriesGnre">
+                <br><br>
+                <label for="newSeriesRating">Series rating</label>
+                <input type="text" name="newSeriesRating">
+                <br><br>
+                <label for="newSeriesSeasons">Series number of seasons</label>
+                <input type="text" name="newSeriesSeasons">
+                <input type="submit" value="send">
+        </form>    
+    </div>
+    <div class="formContainer">
+        <h1>Delete serie</h1>
+        <form id= "deleteSerie">
+            <label for="idSerie">Id serie to delete</label>
+            <input type="text" name="idSerie">
+            <input type="submit" value="delete">
+        </form>
+    </div>
+
+    <div class="formContainer">
+        <h1>Update Serie</h1>
+        <form id="putSeriesFrm">
+                <label for="idSerie">Series id</label>
+                <input type="text" name="idSerie">
+                <br><br>
+                <label for="newSeriesName">Series name</label>
+                <input type="text" name="seriesNameToUp">
+                <br><br>
+                <label for="newSeriesGnre">Series genre</label>
+                <input type="text" name="seriesGnreToUp">
+                <br><br>
+                <label for="newSeriesRating">Series rating</label>
+                <input type="text" name="seriesRatingToUp">
+                <br><br>
+                <label for="newSeriesSeasons">Series number of seasons</label>
+                <input type="text" name="seriesSeasonsToUp">
+                <input type="submit" value="send">
+        </form>  
+    </div>
+
+    <div clas="formContainer">
+        <h1>Get Serie</h1>
+        <form id="getSerieForm">
+            <label for="idSerie">Series id</label>
+                <input type="number" id="getIdSerie" name="getIdSerie" min="1" value=1>
+                <input type="submit" value="Get Serie">
+            <br><br>
+        </form>
+        <p id=serieRow></p>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

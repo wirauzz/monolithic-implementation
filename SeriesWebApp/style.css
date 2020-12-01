@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-size: 100%;
+    background: linear-gradient(to left, rgba(245,246,252,0.52), rgba(0, 0, 0, 0.73)), url(./images/i3.jpg) no-repeat;
+    border-bottom: 5px solid red;
+    /*background: black;*/
+    background-size: 100% 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+header{
+    border-bottom: 3px solid red;
+    height:100px;   
+    top: 0;
+    padding-left: 2%;
+    width: 100%;
+    height: auto;
+    background: black;
+
+}
+header .img_logo_nav{
+    padding-top: 5px;
+    width: 250px;
+}
+header .img_pop{
+    padding-top: 1%;
+    padding-left: 0%;
+    height:90px;  
+}
+#seriesContainer{
+    margin: 25px;
+}
+#displayTable {
+    border-collapse:separate;
+    width: 100%;
+    color: white;
+    border-radius:15px;
+    background-color: rgb(0, 0, 0);
+}
+
+#displayTable td, #displayTable th {
+    border: 3px solid white;
+    border-radius:6px;
+    padding: 8px;
+}
+
+#displayTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#displayTable tr:hover {background-color: rgb(204, 84, 84);}
+
+#displayTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(206, 0, 0);
+    color: white;
+}
+
+#getSeriesBtn{
+    float: right ;
+    background-color: rgb(231, 0, 0);
+    border: none;
+    color: white;
+    margin: 25px 20px;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;  
+    border-radius: 4px; 
+}
+
+.formContainer {
+   /* background: rgb(195,34,34);
+background: linear-gradient(0deg, rgba(195,34,34,1) 0%, rgba(103,18,19,1) 100%);
+    /*background-color: rgba(243, 219, 114, 0.63);*/
+
+    margin: 25px;
+}
+
+label{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    color: white;
+}
+input[type=submit] {
+    background-color:rgb(206, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    /*cursor: pointer;*/
+    border-radius: 4px;
+    float:none;
+    text-align:center;
+}
+
+input[type=text] {
+    background-color: white;
+    /*border-top-left-radius: 10px #0a0202;*/
+    padding: 7px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    /*cursor: pointer;*/
+    border-radius: 4px;
+    float:none;
+    text-align:center;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    
+}
